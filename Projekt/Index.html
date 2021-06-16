@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Grupy Paramilitarne!</title>
+    <meta name="description" content="Przedstawienie oraz opis wielu grup paramilitarnych które znajdują się w naszym kraju"/>
+    <meta name="keywords" content="wojsko, grupy paramilitarne, broń, broń czarnoprochowa, broń nowoczesna, organizacje paramilitarne, pomoc paramilitarna, środowisko paramilitarne, inforamcje paramilitarne, wprowadzenie do wojska, wprowadzenie do działań wojennych, ciekawostki wojskowe" />
+    <meat http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="author" content="Norbert Białek" />
+
+    <link rel="stylesheet" href="body.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"/>
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="logo">
+                
+                <div class="logoTekst">
+                    Grupy Paramilitarne!
+                </div>
+                <div class="zdjecieLogo">
+                    <a href="Index.html"><img src="img/sztuka.png"></a>
+                </div>
+                <div style="clear: both;"></div>
+                
+            </div>
+            
+           
+        </div>
+
+        <div class="nav">
+            <ol>
+                <li style="width: auto;"><a><img src="img/sztuka.png"></a></li>
+                <li><a href="Index.html">Strona Główna</a></li>
+
+                <li><a href="Nowosci.html">Nowości</a>
+                </li>
+
+                <li><a href="Widea.html">Widea</a>
+                    
+                </li>
+
+                <li><a href="Zdjecia.html">Zdięcia</a>
+                </li>
+
+                <li><a href="Artykuly.html">Artykuły</a>
+                   
+                </li>
+
+                <li><a href="Oautorach.html">O autorach</a>                 
+                </li>
+
+                <li><a href="Kontakt.html">Kontakt</a>                    
+                </li>
+            </ol>
+        </div>
+        
+        <div style="height: 25px;"></div>
+
+        <div class="content">
+            <div  class="articleTitle">
+                Witajcie na naszej stronie!!!
+            </div>
+            <div class="akapit">
+                <p>Witajcie na naszej stronie, jako twórcy przedstawionych na naszej witrynie artykułów chcielibyśmy was zachęcić do zapoznania się z materiałami na podstronach. Jeśli chcielibyście skontaktować się z naszym zespołem wszystkie dane znajdziecie w zakładce kontakty.
+                </p>
+            </div>
+
+            <div class="akapit">
+                <p>Nasza praca ma na celu poszerzenie wiadomości dotyczących tematów około wojskowych które dla wielu ludzi wydają się byc otoczone tajemnicą i trudno dostępne. Nic bardziej mylnego wraz z kolejnymi artykułami jesteśmy pewni że twoja własna wiedza zacznie się powiększać a wraz z nią zrozumienie tematyki.
+                </p>
+            </div>
+
+            <div class="akapit">
+                <p>Jako że nasz projekt nie jest jeszcze ukończony oraz mogą pojawić się jakieś błędy, jeśli chcesz poświęcić czas chętnie zapoznamy się z Twoją krytyką jak i zaszczerzeniami. Wszystkie nasze artykuły są sprawdzane przez kilka osób z róznymi poglądami oraz zainteresowaniami mimo to nikt nie jest doskonały więc zawsze możemy pozostawić błąd który umknął całemu zespołowi.
+                </p>
+            </div>
+
+            <div class="akapit">
+                <p>Jeżeli tematy które poruszyliśmy zaciekawiły cię, mamy nadzieję że uda ci się znaleźć dodatkowe materiały prócz tych które proponujemy my. Jeśli chciałbyś dodać do naszej strony jakiś artykuł lub źródła informacji które uważasz że powinny znaleźć się na naszej stronie również zachęcam do pisania do nas.
+                </p>
+            </div>
+
+            <div class="akapit">
+                <p>Mam nadzieję że dzięki temu pokrutkiemu wprowadzeniu udało mi się choć trochę wzbudzić twoją ciekawość, jeśli tak to zapraszam do naszego najnowszego <a href="#">artykułu</a>.
+                </p>
+            </div>
+
+            <div class="akapit">
+                <p>Fusce tincidunt tellus nec mauris suscipit viverra a a velit. Nullam vel mi ultrices leo feugiat porta vel a odio. Mauris sollicitudin maximus nisl, suscipit efficitur diam pharetra vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vulputate nibh vel tristique rhoncus. Sed vulputate, elit placerat viverra pharetra, dolor lectus commodo neque, sed euismod nulla mauris et elit. Vivamus purus libero, vestibulum nec fermentum a, bibendum sed ipsum. Quisque facilisis venenatis nunc egestas porttitor.
+                </p>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+
+        <div style="height: 25px;"></div>
+
+        
+
+        <div class="footer">
+           
+            <div class="footerContent">
+                <div class="laws">
+                Wszelkie prawa zastrzeżone &copy; 
+                Franciszek Dziadkowiec-Wędlikowski, 
+                Grzegorz Mroszczak, 
+                Michał Dulęba, 
+                Norbert Białek 
+                
+                
+            </div>
+        </div>    
+
+<script src="jquery3-6-0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var Navy = $('.nav').offset().top;
+
+            var stickyNav = function(){
+                var Scrolly = $(window).scrollTop();
+
+                if(Scrolly > Navy)  {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

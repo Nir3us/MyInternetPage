@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Grupy Paramilitarne!</title>
+    <meta name="description" content="Przedstawienie oraz opis wielu grup paramilitarnych które znajdują się w naszym kraju"/>
+    <meta name="keywords" content="wojsko, grupy paramilitarne, broń, broń czarnoprochowa, broń nowoczesna, organizacje paramilitarne, pomoc paramilitarna, środowisko paramilitarne, inforamcje paramilitarne, wprowadzenie do wojska, wprowadzenie do działań wojennych, ciekawostki wojskowe" />
+    <meat http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="author" content="Norbert Białek" />
+
+    <link rel="stylesheet" href="body.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"/>
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="logo">
+                
+                <div class="logoTekst">
+                    Grupy Paramilitarne!
+                </div>
+                <div class="zdjecieLogo">
+                    <a href="Index.html"><img src="img/sztuka.png"></a>
+                </div>
+                <div style="clear: both;"></div>
+
+            </div>
+            
+           
+        </div>
+
+        <div class="nav">
+            <ol>
+                <li style="width: auto;"><a><img src="img/sztuka.png"></a></li>
+                <li><a href="Index.html">Strona Główna</a></li>
+
+                <li><a href="Nowosci.html">Nowości</a>
+                </li>
+
+                <li><a href="Widea.html">Widea</a>
+                    
+                </li>
+
+                <li><a href="Zdjecia.html">Zdięcia</a>
+                </li>
+
+                <li><a href="Artykuly.html">Artykuły</a>
+                    
+                </li>
+
+                <li><a href="Oautorach.html">O autorach</a>                 
+                </li>
+
+                <li><a href="Kontakt.html">Kontakt</a>                    
+                </li>
+            </ol>
+        </div>
+        
+        <div style="height: 33px;"></div>
+
+        <div class="content">
+            <div  class="articleTitle" style="text-align: center;">
+                <h3>O autorach!</h3>
+            </div>
+            <div class="akapit" style="height: 200px;">
+                <div class="podTekst" style="height: 100px; margin-top: 200px;">
+                    Jesteśmy studentami Bezpieczeństwa Narodowego pierwszego roku licencjatu. Jako pasionaci rekonstrukcji wojennej chcielibyśmy się podzielić naszymi doświadczeniami oraz pomóc zainteresowanym osobą odnaleźć się w naszej pasji. Atrykuły na naszej stronie zostały napisane przez Michała Dulębę, Grzegorza Mroszczaka oraz Franka Dziadkowca-Wędlikowskiego, a strona została napisana oraz wystylizowana przez Norberta Białka. Wraz postępem naszej wiedzy bedziemy chcieli rozwiną również naszą stronę. Mamy nadzieję że materiały pomogą ci w poznaniu nowego hobby.
+                </div>
+            </div>
+
+      
+            
+        </div>
+
+        <div style="height: 25px;"></div>
+
+        <div class="footer">
+           
+            <div class="footerContent">
+                <div class="laws">
+                Wszelkie prawa zastrzeżone &copy; 
+                Franciszek Dziadkowiec-Wędlikowski, 
+                Grzegorz Mroszczak, 
+                Michał Dulęba, 
+                Norbert Białek 
+                
+                
+            </div>
+        </div>    
+
+<script src="jquery3-6-0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var Navy = $('.nav').offset().top;
+
+            var stickyNav = function(){
+                var Scrolly = $(window).scrollTop();
+
+                if(Scrolly > Navy)  {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
